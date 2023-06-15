@@ -1,10 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
+// TODO: add og image
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://mohamad.jaallouk.com/",
+  author: "Mohamad Jaallouk",
+  desc: "A blog about machine learning, web development, and other things I'm interested in.",
+  title: "MohamadBlog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
