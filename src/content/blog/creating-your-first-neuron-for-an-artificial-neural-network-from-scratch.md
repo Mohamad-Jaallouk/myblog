@@ -149,7 +149,7 @@ for step in range(50):
   bias -= learning_rate * derivative_bias
 
   if step % 10 == 0:
-    print(f"Step {step}, Answer: {np.dot(x_test, weight)}")
+    print(f"Step {step}, Answer: {np.dot(x_test, weight) + bias}")
 ```
 
 <img src="/blog/creating-your-first-neuron-from-scratch/third.webp" alt="Forward propagation of a perceptron" />
@@ -187,7 +187,7 @@ for step in range(50):
   bias -= learning_rate * derivative_bias
 
   if step % 10 == 0:
-    print(f"Step {step}, Answer: {np.dot(x_test, weight)}")
+    print(f"Step {step}, Answer: {np.dot(x_test, weight) + bias}")
 ```
 
 In the code above, we took the last element, 49, from x_train and instead put it in y_test. We use it as a **validation set**. We did this because it allows us to verify the accuracy of our neuron's output. We can confidently do this as we know that the correct output for 49 is indeed 99.
